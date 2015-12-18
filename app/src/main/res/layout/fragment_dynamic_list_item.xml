@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MaopaoItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+
+            <ImageView
+                android:id="@+id/circleIcon"
+                android:layout_width="50dip"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_default_user" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="我叫阿蕾"
+                    android:textColor="#444b53"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1490km"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="3 min"
+                android:textColor="#9a9fa5"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="最好的生活方式就是沉浸大自然。生活中一切的美好都从这开始里，发现美，发现新鲜事物，发现一切自己想要的都源自与此，从此更珍惜，更努力的去活着。"
+            android:textColor="#5b656d"
+            android:textSize="14dip" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:background="#364550" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转发"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点赞"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

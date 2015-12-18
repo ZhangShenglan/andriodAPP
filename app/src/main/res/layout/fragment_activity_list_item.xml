@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 活动图片 -->
+
+            <ImageView
+                android:id="@+id/activity_item_icon"
+                android:layout_width="fill_parent"
+                android:background="#364550"
+                android:layout_height="200dip" />
+            <!-- 价格 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dip"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:background="#aa000000"
+                android:gravity="left|center_vertical"
+                android:minWidth="75dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/activity_item_price_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="￥"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:text="1555"
+                    android:textSize="@dimen/textsize_18" />
+            </LinearLayout>
+        </FrameLayout>
+        <!-- 活动简介 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <LinearLayout
+                android:id="@+id/activity_item_summary_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_item_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:text="最好的生活方式就是沉浸大自然。生活中一切的美好都从这开始里，发现美，发现新鲜事物，发现一切自己想要的都源自与此，从此更珍惜，更努力的去活着。"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/activity_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/activity_date"
+                    android:drawablePadding="3dip"
+                    android:text="12-8"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/activity_distance"
+                    android:drawablePadding="3dip"
+                    android:text="35.5km"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textsize_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/activity_item_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_12"
+                    android:gravity="center"
+                    android:text="5日行"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_viewcount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="520浏览"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_10">10dip</dimen>
+    <dimen name="padding_12">12dip</dimen>
+    <dimen name="padding_15">12dip</dimen>
+
+    <dimen name="toast_y">64dp</dimen>
+</resources>

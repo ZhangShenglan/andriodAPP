@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_bg">#eff2f7</color>
+    <color name="gray_2">#222222</color>
+    <color name="gray_3">#333333</color>
+    <color name="gray_6">#666666</color>
+    <color name="gray_9">#999999</color>
+    <color name="gray_c">#cccccc</color>
+    <color name="gray_d">#dddddd</color>
+    <color name="gray_ca">#cacaca</color>
+    <color name="gray_e">#eeeeee</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#15aeed</color>
+    <color name="blue_font">#23b7ed</color>
+
+</resources>
