@@ -2,8 +2,13 @@ package com.app.linj.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.app.core.base.BaseActivity;
 import com.app.linj.R;
@@ -11,8 +16,7 @@ import com.app.linj.R;
 /**
  * 主界面
  */
-public class MainActivity extends BaseActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
     NavigationDrawerFragment mNavigationDrawerFragment;
 
     Toolbar mToolsbar;
@@ -42,18 +46,27 @@ public class MainActivity extends BaseActivity
         Fragment fragment = null;
         switch (position) {
             case 0:
-                fragment = new ActivityFragment();
+                fragment = new UserHomeFragment();
                 break;
             case 1:
-                fragment = new DynamicFragment();
+                fragment = new UserFollowFragment();
                 break;
             case 2:
-                // 进入冒泡页面，单独处理
+                fragment = new UserFanFragment();
                 break;
             case 3:
-                fragment = new DynamicFragment();
+                fragment = new ActivityFragment();
                 break;
             case 4:
+                fragment = new DynamicFragment();
+                break;
+            case 5:
+                fragment = new CaptainFragment();
+                break;
+            case 6:
+                fragment = new DynamicFragment();
+                break;
+            case 7:
                 fragment = new DynamicFragment();
                 break;
         }
@@ -62,4 +75,6 @@ public class MainActivity extends BaseActivity
         }
         mToolsbar.setTitle(title[position]);
     }
+
+
 }

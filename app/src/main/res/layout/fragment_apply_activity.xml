@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.twotoasters.jazzylistview.JazzyListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_bg"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:scrollingCache="false" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_login_selector"
+        android:gravity="center"
+        android:padding="11dp"
+        android:text="立即报名"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>

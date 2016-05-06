@@ -6,8 +6,10 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 
 import com.app.core.utils.CustomDialog;
@@ -21,6 +23,7 @@ public class BaseActivity extends AppCompatActivity {
     protected LayoutInflater mInflater;
     private ProgressDialog mProgressDialog;
     private SingleToast mSingleToast;
+
     /**
      * 载入动画
      */
@@ -59,7 +62,6 @@ public class BaseActivity extends AppCompatActivity {
         mProgressDialog = new ProgressDialog(this);
         mProgressDialog.setIndeterminate(true);
         mProgressDialog.setCancelable(false);
-
         mInflater = getLayoutInflater();
     }
 
@@ -148,5 +150,44 @@ public class BaseActivity extends AppCompatActivity {
         if (mDialogProgressPopWindow != null) {
             DialogUtil.hideDialog(mDialogProgressPopWindow);
         }
+    }
+
+    Toast mToast;
+
+    public void ShowToast(final String text) {
+        if (!TextUtils.isEmpty(text)) {
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+                    // TODO Auto-generated method stub
+                    if (mToast == null) {
+                        mToast = Toast.makeText(getApplicationContext(), text,
+                                Toast.LENGTH_LONG);
+                    } else {
+                        mToast.setText(text);
+                    }
+                    mToast.show();
+                }
+            });
+
+        }
+    }
+
+    public void ShowToast(final int resId) {
+        runOnUiThread(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                if (mToast == null) {
+                    mToast = Toast.makeText(BaseActivity.this.getApplicationContext(), resId,
+                            Toast.LENGTH_LONG);
+                } else {
+                    mToast.setText(resId);
+                }
+                mToast.show();
+            }
+        });
     }
 }

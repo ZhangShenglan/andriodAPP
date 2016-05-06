@@ -21,11 +21,14 @@ import com.readystatesoftware.viewbadger.BadgeView;
 
 /**
  * 导航fragment
- * Created by linjizong on 15/12/8.
+ * Created by zhangsl on 15/12/8.
  */
 public class NavigationDrawerFragment extends BaseFragment {
 
     final int radioIds[] = {
+            R.id.userHome,
+            R.id.follows,
+            R.id.fans,
             R.id.radio0,
             R.id.radio1,
             R.id.radio2,
@@ -54,8 +57,8 @@ public class NavigationDrawerFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_navigation_drawer, null);
-        BadgeView badgeView = (BadgeView) view.findViewById(R.id.badge3);
-        badgeView.setText("51");
+//        BadgeView badgeView = (BadgeView) view.findViewById(R.id.badge3);
+//        badgeView.setText("51");
         return view;
     }
 
@@ -137,4 +140,5 @@ public class NavigationDrawerFragment extends BaseFragment {
     public interface NavigationDrawerCallbacks {
         void onNavigationDrawerItemSelected(int position);
     }
+
 }

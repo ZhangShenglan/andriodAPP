@@ -18,7 +18,7 @@ import java.util.UUID;
 /**
  * 全局应用程序类：用于保存和调用全局应用配置
  *
- * @author linjizong
+ * @author zhangsl
  */
 public class BaseAppContext extends Application {
 

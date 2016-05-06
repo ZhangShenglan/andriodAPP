@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string-array name="drawer_title">
-        <item>活动</item>
-        <item>动态</item>
-        <item>消息</item>
+        <item>个人空间</item>
+        <item>关注列表</item>
+        <item>粉丝列表</item>
+        <item>活动专区</item>
+        <item>想去专区</item>
+        <item>领队专区</item>
+        <item>圈子</item>
         <item>发现</item>
     </string-array>
 </resources>

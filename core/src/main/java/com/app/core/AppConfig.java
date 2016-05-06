@@ -9,7 +9,7 @@ import java.io.File;
 
 
 /**
- * @author linjizong
+ * @author zhangsl
  * @Description: 应用程序配置类：用于保存用户相关信息及设置
  * @date 2015-4-11
  */

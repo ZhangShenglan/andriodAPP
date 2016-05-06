@@ -7,7 +7,7 @@ import java.util.Stack;
 
 
 /**
- * @author linjizong
+ * @author zhangsl
  * @Description:Activity管理类
  * @date 2015-4-11
  */

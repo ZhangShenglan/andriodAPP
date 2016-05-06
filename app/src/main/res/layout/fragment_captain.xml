@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.twotoasters.jazzylistview.JazzyListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_bg"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:scrollingCache="false" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/captain_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="2">
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/plugin_camera_send_focused"
+            android:button="@null"
+            android:state_focused="true"
+            android:drawablePadding="15dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="0dp"
+            android:text="领队排行"
+            android:textColor="#444b53"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"/>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/plugin_camera_send_unselected"
+            android:button="@null"
+            android:state_focused="true"
+            android:drawablePadding="15dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="0dp"
+            android:text="俱乐部招聘"
+            android:textColor="#444b53"
+            android:textSize="17sp"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

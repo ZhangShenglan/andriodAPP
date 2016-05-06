@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 自定义Application类
- * Created by linjizong on 15/12/8.
+ * Created by zhangsl on 15/12/8.
  */
 public class AppContext extends BaseAppContext {
     @Override

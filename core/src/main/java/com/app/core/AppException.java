@@ -18,7 +18,7 @@ import java.util.Date;
 
 /**
  * @Description:  应用程序异常类：用于捕获异常和提示错误信息
- * @author linjizong
+ * @author zhangsl
  * @date 2015-4-11
  */
 public class AppException extends Exception implements UncaughtExceptionHandler{

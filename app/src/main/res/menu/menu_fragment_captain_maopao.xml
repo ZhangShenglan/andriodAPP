@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/captain_menu"
+        android:icon="@drawable/ic_menu_add_task"
+        android:title="筛选"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_captainSort"
+                android:icon="@drawable/project_icon_normal"
+                android:title="领队排行"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/menu_offer"
+                android:icon="@drawable/project_icon_normal"
+                android:title="俱乐部招聘"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+      </menu>

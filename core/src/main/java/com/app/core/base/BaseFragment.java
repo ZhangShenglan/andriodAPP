@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 
 import com.app.core.utils.CustomDialog;
-import com.app.core.utils.FootUpdate;
 import com.app.core.utils.SingleToast;
 
 /**
@@ -73,6 +72,7 @@ public class BaseFragment extends Fragment {
         mProgressDialog.setCancelable(false);
 
         mSingleToast = new SingleToast(getActivity());
+
     }
 
     @Override

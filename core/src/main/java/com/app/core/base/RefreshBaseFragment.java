@@ -1,7 +1,8 @@
 package com.app.core.base;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.app.core.R;
 import com.app.core.utils.FootUpdate;
@@ -41,4 +42,6 @@ public abstract class RefreshBaseFragment extends BaseFragment implements SwipeR
     protected final void enableSwipeRefresh(boolean enable) {
         swipeRefreshLayout.setEnabled(enable);
     }
+    Toast mToast;
+
 }

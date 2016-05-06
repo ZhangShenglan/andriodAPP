@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
 
 /**
  * 动态fragment
- * Created by linjizong on 15/12/4.
+ * Created by zhangsl on 15/12/4.
  */
 public class DynamicFragment extends RefreshBaseFragment implements FootUpdate.LoadMore {
     @Bind(R.id.listView)
@@ -59,7 +59,7 @@ public class DynamicFragment extends RefreshBaseFragment implements FootUpdate.L
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_fragment_maopao, menu);
+        inflater.inflate(R.menu.menu_fragment_dynamic_maopao, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -70,7 +70,8 @@ public class DynamicFragment extends RefreshBaseFragment implements FootUpdate.L
             return true;
         }
         int itemId_ = item.getItemId();
-        if (itemId_ == R.id.action_search) {
+        if (itemId_ == R.id.action_more) {
+            getFragmentManager().beginTransaction().replace(R.id.container, new AddDynamicFragment()).commit();
             return true;
         }
         return false;
@@ -125,6 +126,7 @@ public class DynamicFragment extends RefreshBaseFragment implements FootUpdate.L
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View view = mInflater.inflate(R.layout.fragment_dynamic_list_item, null);
+
             return view;
         }
 

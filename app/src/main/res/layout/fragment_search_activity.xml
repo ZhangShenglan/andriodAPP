@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Search_Item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/search_et_input"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/search_icon"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_edittext_shape"
+                    android:textSize="16sp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:hint="请输入关键字"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/iv_delete_bg"
+                    android:id="@+id/search_iv_delete"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/search_btn_back"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="搜索"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/search_lv_tips"
+            android:background="@drawable/lv_search_tips_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/dashLine1"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:lineSpacingExtra="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="热门目的地"
+            android:textColor="#5b656d"
+            android:textSize="14dip" />
+        <LinearLayout
+            android:id="@+id/dashLine2"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/la"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="拉萨"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/li"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="丽江"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+                <Button
+                    android:id="@+id/dao"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="稻田亚丁"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+                <Button
+                    android:id="@+id/shang"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="上海"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

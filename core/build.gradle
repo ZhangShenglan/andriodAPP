@@ -20,16 +20,26 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'io.reactivex:rxjava:1.0.16'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.facebook.fresco:fresco:0.6.1+'
+//    compile 'com.facebook.fresco:fresco:0.6.1+'
     compile 'com.facebook.fresco:imagepipeline-okhttp:0.6.1+'
     compile 'com.facebook.rebound:rebound:0.3.+'
     compile 'com.twotoasters.jazzylistview:library:1.2.1'
     compile 'com.twotoasters.jazzylistview:library-recyclerview:1.2.1'
     compile 'me.drakeet.materialdialog:library:1.2.8'
+    compile files('libs/locSDK_4.2.jar')
+    compile files('libs/baidumapapi_v3_0_0.jar')
+    compile files('libs/universal-image-loader-1.9.2_sources.jar')
+    compile files('libs/photoview-library-1.2.2.jar')
+    compile files('libs/BmobSDK_V3.4.3_0820.jar')
+    compile files('libs/BmobIM_V1.1.9beta_20150820.jar')
+
+
+
+
 }

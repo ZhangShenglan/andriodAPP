@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MaopaoItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+
+            <ImageView
+                android:id="@+id/circleIcon"
+                android:layout_width="50dip"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_default_user" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="我叫阿蕾"
+                    android:textColor="#444b53"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100关注  50点赞"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="3km"
+                android:textColor="#9a9fa5"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="浙江理工大学 带队13次！"
+            android:textColor="#5b656d"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="#dfdfdf" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点赞"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

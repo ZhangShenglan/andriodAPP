@@ -70,14 +70,15 @@
             android:paddingBottom="@dimen/padding_15"
             android:paddingLeft="@dimen/padding_10"
             android:paddingRight="@dimen/padding_10"
-            android:text="最好的生活方式就是沉浸大自然。生活中一切的美好都从这开始里，发现美，发现新鲜事物，发现一切自己想要的都源自与此，从此更珍惜，更努力的去活着。"
+            android:text="这个周末，我想去上海玩，一个人。求组队！"
             android:textColor="#5b656d"
             android:textSize="14dip" />
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="120dip"
-            android:background="#364550" />
+            android:background="#364550"
+           />
 
         <LinearLayout
             android:layout_width="fill_parent"

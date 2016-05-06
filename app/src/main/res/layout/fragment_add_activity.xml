@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 您的身份"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"/>
+        <Button
+            android:id="@+id/button_person"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:text="个人"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"
+            />
+        <Button
+            android:id="@+id/button_captain"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:text="领队"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"
+            />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dashLine1"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 标题"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <EditText
+            android:id="@+id/add_et_title"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:textSize="16sp"
+            android:background="@drawable/input_rectangle"
+            android:inputType="text"
+            android:hint="请输入标题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine2"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 出发时间"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <Button
+            android:id="@+id/time_piker"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:text="请选择出发时间"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:drawableLeft="@drawable/activity_date"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine3"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 出发地"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <EditText
+            android:id="@+id/startPlace_et_input"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:textSize="16sp"
+            android:background="@drawable/input_rectangle"
+            android:inputType="text"
+            android:hint="请输入出发地" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine4"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 目的地"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <EditText
+            android:id="@+id/endPlace_et_input"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:textSize="16sp"
+            android:background="@drawable/input_rectangle"
+            android:inputType="text"
+            android:hint="请输入目的地" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine5"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 成行人数"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <EditText
+            android:id="@+id/personNum_et_input"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:textSize="16sp"
+            android:background="@drawable/input_rectangle"
+            android:inputType="text"
+            android:hint="请输入成行人数" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine6"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 领队"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"/>
+        <Button
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:text="请选择领队"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine7"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 景点图片"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <Button
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:text="＋"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashLine8"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/dash_line"
+        android:orientation="horizontal"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:text="* 活动介绍"
+            android:textColor="#9a9fa5"
+            android:textSize="20dip"
+            android:orientation = "horizontal"/>
+        <EditText
+            android:id="@+id/activity_content_et_input"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:textSize="16sp"
+            android:background="@drawable/input_rectangle"
+            android:inputType="text"
+            android:hint="请输入活动介绍(200字)" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

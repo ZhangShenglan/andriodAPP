@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 活动图片 -->
+
+            <ImageView
+                android:id="@+id/activity_item_icon"
+                android:layout_width="fill_parent"
+                android:background="#364550"
+                android:layout_height="200dip" />
+            <!-- 价格 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dip"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:background="#aa000000"
+                android:gravity="left|center_vertical"
+                android:minWidth="75dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/activity_item_price_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="￥"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:text="1555"
+                    android:textSize="@dimen/textsize_18" />
+            </LinearLayout>
+        </FrameLayout>
+        <!-- 活动标题 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <LinearLayout
+                android:id="@+id/activity_item_title_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_title_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:text="[五一经典]武功山朝圣之旅－－漫步云海之颠，行走日出之上"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/textsize_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/activity_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/activity_date"
+                    android:drawablePadding="3dip"
+                    android:text="12-8"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/activity_distance"
+                    android:drawablePadding="3dip"
+                    android:text="35.5km"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textsize_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/activity_item_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_12"
+                    android:gravity="center"
+                    android:text="5日行"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/activity_item_viewcount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="520浏览"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/textsize_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine3"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_beginPlace_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_item_beginPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="出发地"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                android:drawableLeft="@drawable/activity_distance"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_item_beginPlaceContent_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="8dip">
+            <TextView
+                android:id="@+id/activity_item_beginPlaceContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="浙江省 杭州市 武林广场地铁站B出口右转10米路口"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_15"
+                android:paddingLeft="30dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine4"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_endPlace_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_item_endPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="目的地"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                android:drawableLeft="@drawable/activity_distance"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_item_endPlaceContent_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="8dip">
+            <TextView
+                android:id="@+id/activity_item_endPlaceContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="江西省 萍乡市 武功山"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_15"
+                android:paddingLeft="30dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine5"
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_captain_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="5dip"
+            >
+            <ImageView
+                android:id="@+id/captainIcon"
+                android:layout_width="50dip"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_default_user" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/captainName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="牧野麦子"
+                    android:textColor="#444b53"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/captainIntroduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="带领活动168次"
+                    android:textColor="#9a9fa5"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine6"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_like_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_item_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="想去"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                />
+            <TextView
+                android:id="@+id/activity_item_likeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="8"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="2dip"
+                android:paddingLeft="10dip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine7"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <!-- 想去用户头像-->
+        <LinearLayout
+            android:id="@+id/activity_likeAvatar_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="5dip"
+            >
+
+            <LinearLayout
+                android:id="@+id/activity_item_likeAvatar_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="5dip"
+                >
+                <ImageView
+                    android:id="@+id/likeAvatar1"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/likeAvatar2"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/likeAvatar3"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/likeAvatar4"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/likeAvatar5"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/likeAvatar6"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine8"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_apply_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_item_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="已报名"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                />
+            <TextView
+                android:id="@+id/activity_item_applyNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="2,"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="2dip"
+                android:paddingLeft="10dip"
+                />
+            <TextView
+                android:id="@+id/activity_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="剩余"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                android:paddingLeft="20dip"
+                />
+            <TextView
+                android:id="@+id/activity_item_leftNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="28"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="2dip"
+                android:paddingLeft="10dip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine9"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <!-- 报名用户头像-->
+        <LinearLayout
+            android:id="@+id/activity_applyAvatar_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="5dip"
+            >
+
+            <LinearLayout
+                android:id="@+id/activity_item_applyAvatar_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="5dip"
+                >
+                <ImageView
+                    android:id="@+id/applyAvatar1"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/applyAvatar2"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/applyAvatar3"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/applyAvatar4"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/applyAvatar5"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+                <ImageView
+                    android:id="@+id/applyAvatar6"
+                    android:layout_width="50dip"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_default_user"
+                    android:paddingLeft="10dip"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine10"
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_activityType_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_activityType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="活动类型"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_item_activityType_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="8dip">
+
+            <LinearLayout
+                android:id="@+id/activity_item_activityType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+                <Button
+                    android:id="@+id/activityType"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:text="一日游"
+                    android:textColor="#9a9fa5"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashLine11"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/dash_line"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/activity_item_activityIntroduce_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10">
+            <TextView
+                android:id="@+id/activity_item_activityIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="活动概况"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_18"
+                android:drawablePadding="3dip"
+                />
+        </LinearLayout>
+
+
+
+
+        <!--不显示这段-->
+        <LinearLayout
+            android:id="@+id/activity_item_endPlaceContent_containe5r"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="8dip">
+            <TextView
+                android:id="@+id/activity_item_endPlaceContent5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="江西省 萍乡市 武功山"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/textsize_15"
+                android:paddingLeft="30dip"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
